@@ -156,3 +156,137 @@ span {
   color: #555555;
   font-weight: 400;
 }
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .recipe-card {
+    max-width: 90%;
+    padding: 30px;
+    margin: 30px auto;
+  }
+
+  .recipe-card .recipe-image {
+    max-width: 100%;
+  }
+
+  .recipe-card .recipe-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile (375px - 767px) */
+@media screen and (max-width: 767px) {
+  body {
+    background-color: #ffffff; /* Hilangkan background di mobile */
+  }
+
+  .recipe-card {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0;
+    border-radius: 0; /* Hilangkan border radius di mobile */
+    box-shadow: none;
+  }
+
+  .recipe-card .recipe-image {
+    max-width: 100%;
+    border-radius: 0;
+    margin: -20px -20px 0 -20px; /* Bikin gambar full width */
+    width: calc(100% + 40px);
+  }
+
+  .recipe-card .recipe-title {
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+
+  .recipe-card .recipe-description {
+    font-size: 0.9rem;
+    margin: 0 0 20px;
+  }
+
+  .recipe-card .preparation-details {
+    padding: 15px 20px;
+    margin: 0 0 15px;
+  }
+
+  .recipe-card .preparation-title {
+    font-size: 1.2rem;
+  }
+
+  .recipe-card .ingredients-title,
+  .recipe-card .instructions-title,
+  .recipe-card .nutrition-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .recipe-card .ingredients-details,
+  .recipe-card .instruct-details,
+  .recipe-card .nutrition-desc {
+    font-size: 14px;
+  }
+
+  .recipe-card .ingredients-details li,
+  .recipe-card .instruct-details li {
+    margin-bottom: 8px;
+    padding-left: 5px;
+  }
+
+  .recipe-card .nutrition-table td {
+    padding: 10px 5px;
+    font-size: 0.9rem;
+  }
+
+  .recipe-card .ingredients {
+    margin: 15px 0;
+    padding-bottom: 15px;
+  }
+
+  .recipe-card .instruct {
+    padding-bottom: 5px;
+  }
+
+  .recipe-card .nutrition-table {
+    margin: 15px 0;
+  }
+}
+
+/* Mobile Kecil (320px - 374px) */
+@media screen and (max-width: 374px) {
+  .recipe-card {
+    padding: 15px;
+  }
+
+  .recipe-card .recipe-title {
+    font-size: 1.5rem;
+  }
+
+  .recipe-card .recipe-description {
+    font-size: 0.85rem;
+  }
+
+  .recipe-card .ingredients-title,
+  .recipe-card .instructions-title,
+  .recipe-card .nutrition-title {
+    font-size: 1.3rem;
+  }
+
+  .recipe-card .preparation-details {
+    padding: 10px 15px;
+  }
+
+  .recipe-card .ingredients-details,
+  .recipe-card .instruct-details {
+    font-size: 13px;
+    padding-left: 20px;
+  }
+
+  .recipe-card .nutrition-table td {
+    font-size: 0.8rem;
+    padding: 8px 5px;
+  }
+}
